@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Biblioteca - UX Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema de Biblioteca</h1>
+    <nav>
+      <a href="#">Meus Empréstimos</a>
+      <a href="#">Reservas</a>
+      <a href="#">Histórico</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search">
+      <input type="text" id="searchBar" placeholder="Buscar livro...">
+      <button onclick="searchBook()">Buscar</button>
+    </section>
+
+    <section id="results" class="results">
+      <!-- Resultados aparecerão aqui -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Protótipo UX - Biblioteca Universitária</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
