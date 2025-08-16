@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #4361ee;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.search {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.search input {
+  width: 300px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4361ee;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #274bb0;
+}
+
+.results {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
