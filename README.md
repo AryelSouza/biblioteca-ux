@@ -34,7 +34,7 @@ Muitos sistemas de bibliotecas apresentam interfaces complexas e pouco amigávei
 ✍️ Autor: Aryel de Souza Silva
 ## ▶️ Como Rodar o Projeto
 
-###Abrindo no Navegador
+### Abrindo no Navegador
 1. Baixe ou clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/ux-library-system.git
