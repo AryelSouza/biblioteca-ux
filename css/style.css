@@ -1,44 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0; padding: 0;
-  background: #f8f9fa;
-  color: #333;
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f3f4f6; /* cinza suave */
+  color: #1f2937; /* cinza escuro */
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
 header {
-  background: #4361ee;
+  background: linear-gradient(90deg, #4361ee, #3b82f6);
   color: #fff;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header h1::before {
+  content: "📚";
 }
 
 nav a {
-  margin: 0 10px;
-  color: #fff;
+  margin-left: 1.5rem;
+  color: #e0e7ff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  transition: 0.2s;
 }
-nav a.active { text-decoration: underline; }
+nav a:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+nav a.active {
+  color: #fff;
+  border-bottom: 2px solid #ffd166;
+}
 
-main { padding: 1rem; max-width: 800px; margin: auto; }
-footer { text-align: center; padding: 1rem; background: #fff; margin-top: 2rem; }
+/* ---------- MAIN ---------- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+input[type="text"]:focus {
+  border-color: #4361ee;
+  outline: none;
+}
+
+/* ---------- CARDS ---------- */
 .grid {
   display: grid;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.5rem;
 }
+
 .card {
   background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #111827;
+}
+.card p {
+  margin-top: 0.3rem;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* ---------- BOTÕES ---------- */
 button {
-  margin-top: .5rem;
-  padding: .5rem 1rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #4361ee;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.2s;
 }
-button.cancel { background: #ffd166; }
+button:hover {
+  background: #3651d4;
+}
+
+button.cancel {
+  background: #fbbf24;
+  color: #111;
+}
+button.cancel:hover {
+  background: #f59e0b;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  color: #6b7280;
+  margin-top: 3rem;
+  border-top: 1px solid #e5e7eb;
+}
